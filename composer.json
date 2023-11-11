@@ -1,0 +1,51 @@
+{
+  "name": "cr4zyfl1x/phputils",
+  "description": "An open-source PHP-Library offering common solutions for common problems.",
+  "keywords": [
+    "filesystem",
+    "IO",
+    "file",
+    "directory",
+    "reader",
+    "writer",
+    "resource"
+  ],
+
+  "minimum-stability": "stable",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/Cr4zyFl1x/phputils",
+  "readme": "README.md",
+
+  "authors": [
+    {
+      "name": "Florian J. Kleine-Vorholt",
+      "email": "florian@kleine-vorholt.net",
+      "homepage": "https://florian.nrw",
+      "role": "Maintainer"
+    }
+  ],
+
+  "require": {
+      "php": "^8.0"
+  },
+  "require-dev": {
+      "phpunit/phpunit": "^10.3.0"
+  },
+
+  "autoload": {
+    "psr-4": {
+      "Cr4zyFl1x\\PHPUtils\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Cr4zyFl1x\\PHPUtilsTest\\": "test"
+    }
+  },
+
+  "scripts": {
+    "test": [
+      "phpunit --testdox"
+    ]
+  }
+}
